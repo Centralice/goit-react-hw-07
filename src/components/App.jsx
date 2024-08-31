@@ -4,6 +4,7 @@ import ContactList from "./ContactList/ContactList";
 import SearchBox from "./SearchBox/SearchBox";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "../redux/contactsOps";
+import Loader from "./Loader/Loader";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -11,8 +12,8 @@ const App = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  const loading = useSelector(state => state.loading)
-  const error = useSelector(state => state.error);
+  const loading = useSelector(state => (state.contacts.loading))
+  const error = useSelector(state => state.contacts.error);
 
   return (
     <div>
