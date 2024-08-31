@@ -1,0 +1,14 @@
+.wrapper {
+  text-align: center;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px rgb(183, 183, 183);
+}
+
+.label {
+  margin-right: 25px;
+  font-weight: bold;
+}
