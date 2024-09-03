@@ -45,3 +45,7 @@ const slice = createSlice({
 });
 
 export default slice.reducer;
+
+export const selectLoading = (state) => state.contacts.loading;
+export const selectError = (state) => state.contacts.error;
+export const selectContacts = (state) => state.contacts.items;
