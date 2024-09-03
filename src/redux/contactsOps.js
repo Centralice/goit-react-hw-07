@@ -1,5 +1,3 @@
-// addContact - додавання нового контакту (метод POST). Базовий тип екшену це рядок "contacts/addContact".
-
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
